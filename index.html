@@ -1,23 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aludemy - Universidade do pensar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Universidade do pensar</h1>
+		<h2 id="h2"> <script>if(document.cookie != "") { document.getElementById("h2").innerHTML = "Olá Raul"}</script></h2>
+		<p>Cursos online para o seu desenvolvimento pessoal e profissional.</p>
+		<nav>
+		  <ul>
+			<li><a href="#" class="open-popup" id="sobre">Sobre Nós</a></li>
+			<li><a href="#" class="open-popup" id="cadastro">Cadastre-se</a></li>
+			<li><a href="#" class="open-popup" id="login">Faça o login</a></li>
+		  </ul>
+		</nav>
+
+	</header>
+	<main>
+		<div class="popup" style="display: none;">
+			Somos uma organização de formação de protagonistas que utilizam seu autoconhecimento para evoluir a patamares jamais pensados. Nossa plataforma é unica pois oferece cursos como valor horiginal entre R$500,00 por apenas R$20,00.
+			<!-- <button class="fechar">Fechar</button> -->
+		</div>
+		<div class="popup" style="display: none;">
+			<h2>Cadastro de Usuário</h2>
+			<form>
+			  <label for="nome">Nome:</label>
+			  <input type="text" id="nome" name="nome" required>
+			<br>
+			  <label for="email">E-mail:</label>
+			  <input type="email" id="email" name="email" required>
+			<br>
+			  <label for="senha">Senha:</label>
+			  <input type="password" id="senha" name="senha" required>
+			<br>
+			  <button type="submit" id="submit-btn">Cadastrar</button>
+			  <button type="reset">reset</button>
+			</form>
+			<!-- <button class="fechar">Fechar</button> -->
+		</div>
+		<div class="popup" style="display: none;">
+			<h2>Login</h2>
+			<form>
+				<label for="login">Login:</label>
+				<input type="text" id="login" name="login" required>
+				<label for="senha">Senha:</label>
+				<input type="password" id="senha" name="senha" required>
+			<br>
+				<button type="button" id="login-btn">Logar</button>
+			</form>
+			<!-- <button class="fechar">Fechar</button> -->
+		</div>
+		<section>
+		  <h2>Cursos Disponíveis</h2>
+		  <ul>
+			<li>
+			  <h3>Curso de Meditação</h3>
+			  <img src="./img/sao_francisco_meditando.jpg" alt="Curso de Marketing Digital" >
+			  <p>Aprenda as melhores técnicas de meditação.</p>
+			  <a href="#" class="button">Saiba Mais</a>
+			</li>
+			<li>
+			  <h3>Curso de Tecnologias Web</h3>
+			  <img src="./img/W3C.png" alt="Curso de Programação para Iniciantes" >
+			  <p>Desenvolva suas habilidades em Tecnologias Web.</p>
+			  <a href="#" class="button">Saiba Mais</a>
+			</li>
+			<li>
+			  <h3>Curso de estado Zen nas Tecnologias Web</h3>
+			  <img src="./img/a_nerd_maditating.jpg" alt="Curso de Design Gráfico">
+			  <p>Aprenda a não se estressar quanto encontrar um bug ou quando seu estilo nas páginas Web nunca agradar o cliente.</p>
+			  <a href="#" class="button">Saiba Mais</a>
+			</li>
+		  </ul>
+		</section>
+		
+		<section>
+		  <h2>Nossos Instrutores</h2>
+		  <ul>
+			<li>
+			  <img src="./img/raul.jpg" alt="Instrutor 1">
+			  <h3>Raul Souza</h3>
+			  <p>Instrutor</p>
+			</li>
+		  </ul>
+		</section>
+	</main>
+	<footer>
+		<p>Aludemy &copy; 2023 - Todos os direitos reservados.</p>
+		<button onclick="clearOutputCookies()">Clear</button>
+		<button onclick="showCookies()">Show</button>
+	</footer>
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
 </html>

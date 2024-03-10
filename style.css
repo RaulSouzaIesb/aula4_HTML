@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('./img/anjo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 80px;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: #fff;
+  border: none;
+  color: #333;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  padding: 80px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-right: 20px;
+  width: 30%;
+}
+
+li img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 168px;
+}
+
+li h3 {
+  font-size: 24px;
+  margin: 20px;
+}
+
+li p {
+  font-size: 18px;
+  margin: 20px;
+}
+
+li a {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+ul:nth-of-type(2) li {
+  text-align: center;
+  width: 25%;
+}
+
+ul:nth-of-type(2) li img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+ul:nth-of-type(2) li h3 {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+input[type=text], input[type=password], input[type=email], textarea {
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button[type=submit], button, button[type=reset] {
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #BFEFFF; /* Azul muito claro */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 999;
+}
+
+#fechar {
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  margin-top: 10px;
+  margin-left: auto;
+  display: block;
+}
